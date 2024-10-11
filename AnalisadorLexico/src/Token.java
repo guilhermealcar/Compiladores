@@ -1,0 +1,27 @@
+
+public class Token {
+	public String lexema;
+	public TipoToken tipo;
+	public int linha;	// chave p tabela hash/ tabela de simbolos
+	
+	public String getLexema() {
+		return lexema;
+	}
+	public void setLexema(String lexema) {
+		this.lexema = lexema;
+	}
+	public TipoToken getTipo() {
+		return tipo;
+	}
+	public void setTipo(TipoToken tipo) {
+		this.tipo = tipo;
+	}
+	public int getLinha() {
+		return linha;
+	}
+	public void setLinha(int linha) {
+		this.linha = linha;
+	}
+	
+	
+}
