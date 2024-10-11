@@ -4,6 +4,20 @@ public class Token {
 	public TipoToken tipo;
 	public int linha;	// chave p tabela hash/ tabela de simbolos
 	
+	
+	
+
+	public Token(String lexema, TipoToken tipo, int linha) {
+		this.lexema = lexema;
+		this.tipo = tipo;
+		this.linha = linha;
+	}
+	
+	@Override
+	public String toString() {
+		return "<" + tipo + ", " + lexema + ", " + linha + ">";
+	}
+	
 	public String getLexema() {
 		return lexema;
 	}
